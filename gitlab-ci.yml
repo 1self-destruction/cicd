@@ -1,0 +1,24 @@
+stages:
+  - build
+  - deploy
+
+building:
+  stage: build
+  tags: 
+    - build
+  script:
+
+  artifacts:
+    paths:
+
+    expire_in: 30 days
+  when: always
+
+
+deploy:
+  stage: deploy
+  tags:
+    - deploy
+  script:
+    - bash src/mv.sh
+  when: manual
