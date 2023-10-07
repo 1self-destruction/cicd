@@ -70,6 +70,7 @@ services:
 ```
 
 Итоговая  структура проекта:
+
 ```
 app/public
 app/src
@@ -79,12 +80,15 @@ app/Dockerfile
 ```
 
 в корне проекта нужно запустить 'docker-compose up -d', после чего наше приложение начнет запускаться  и будет доступно по адресу localhost:8000 с основной системы
+
 ![vms](img/app1.JPG)
 ![vms](img/app2.JPG)
+
 # gitlab, gitlab-runner
 Для развертки нужно установить клиент gitlab, gitlab-runner,  лучше сделать это через докер, но я поставлю их через deb пакеты 
 
 gitlab
+
 ```
 $ curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 $ EXTERNAL_URL="http://localhost" apt-get install gitlab-ce
@@ -92,7 +96,6 @@ $ EXTERNAL_URL="http://localhost" apt-get install gitlab-ce
 После успешной установки гитлаб будет доступен с основной  системы по адресу 'http://localhost:2224', для авторизации использовать логин  root, пароль будет находиться в файле /etc/gitlab/initial_root_password
 
 ![vms](img/password.JPG)
-
 ![test](img/image.png)
 
 Для подключения раннера нужно создать его
