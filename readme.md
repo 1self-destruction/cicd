@@ -166,18 +166,18 @@ git clone http://localhost:2224/root/vue-test.git
 
 После изменения кода в самом приложении и пуша будет произведена сборка и запуск, приложение будет доступно так же по адресу http://localhost:8000
 
-![Alt text](img/image-4.png)
-![Alt text](img/image-6.png)
+![Alt text](img/image-31.png)
+![Alt text](img/image37.png)
 
 Так же мы можем увидеть сам пайплайн
 
-![Alt text](img/image-7.png)
+![Alt text](img/image-29.png)
 
 
-Теперь при изменении приложения обратно и повторном пуше увидим  что изменения так же подтянулись  после выполнения пайплайнов.
+Теперь повторно измененим приложение и увидим  что изменения так же подтянулись  после выполнения пайплайнов.
 
-![Alt text](img/image-8.png)
-![Alt text](img/image-9.png)
-![Alt text](img/image-10.png)
+![Alt text](img/image-55.png)
+![Alt text](img/image-86.png)
+![Alt text](img/image-56.png)
 
 Конец
