@@ -2,23 +2,18 @@ stages:
   - build
   - deploy
 
-building:
+build:
   stage: build
-  tags: 
+  tags:
     - build
   script:
-
-  artifacts:
-    paths:
-
-    expire_in: 30 days
+    - docker-compose build
   when: always
-
 
 deploy:
   stage: deploy
   tags:
     - deploy
   script:
-    - bash src/mv.sh
-  when: manual
+    - docker-compose up -d
+  when: on_successm
