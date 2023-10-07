@@ -146,12 +146,23 @@ deploy:
     - deploy
   script:
     - docker-compose up -d
-  when: on_successm
+  when: on_success
 gitlab-runner
 ```
+
+
+Проект можно загрузить на основной компьютер для удобства командой
+
+```
+git clone http://localhost:2224/root/vue-test.git
+```
+
+![Alt text](img/image21.png)
+
 Вот так выглядит итоговый репозиторий
 
 ![Alt text](img/image-1.png)
+
 
 После изменения кода в самом приложении и пуша будет произведена сборка и запуск, приложение будет доступно так же по адресу http://localhost:8000
 
